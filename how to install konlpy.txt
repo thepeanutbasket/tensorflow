@@ -1,0 +1,16 @@
+형태소 분석 패키지 --> konlpy
+
+원래는 C++ 기반으로 만들어진 Java용 라이브러리.
+Java 라이브러리를 Python용으로 포팅해놓은 상태
+-> 내부적으로 C++, Java 기능을 호출하고 있다.
+
+konlpy를 사용하기 위해서는
+C++ 개발도구와 Java 개발도구가 먼저 설치되어야 한다.
+# C++ 개발도구 --> Visual C++ 2015 재배포 가능 도구
+# Java 개발도구 --> JDK 1.8 (64비트용) --> Python도 64비트용으로 필요함
+
+# Python과 Java간의 인터페이스를 제공하는 패키지
+pip install --upgrade JPype1==1.0.2
+
+# konlpy 설치
+pip install --upgrade konlpy
